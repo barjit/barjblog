@@ -43,6 +43,11 @@ gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 # jQuery
 gem 'jquery-rails'
+
+# rspec
+group :development, :test do
+  gem 'rspec-rails', '~> 3.6'
+end
 ######################################################
 
 
