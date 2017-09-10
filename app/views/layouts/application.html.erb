@@ -13,7 +13,19 @@
 
   <body>
     <div class="container">
-      <%= yield %>
+      <div class="row">
+        <div class="col-sm-2" style="background-color: #ecf0f1;">
+          <nav class="nav flex-column">
+            <a class="nav-link mb-3" href="/">Home</a>
+            <a class="nav-link mb-3" href="/posts">Blog</a>
+            <a class="nav-link mb-3" href="https://github.com/barjit">Github</a>
+            <a class="nav-link mb-3" href="https://www.linkedin.com/in/barjit/">Linkedin</a>
+            <a class="nav-link mb-3" href="#">Resume</a>
+          </nav>
+        </div>
+              <%= yield %>
+      </div>
+
     </div>
   </body>
 

@@ -1,17 +1,6 @@
-<!-- Navigation Links -->
-<div class="container">
-  <nav class="navbar fixed-bottom navbar-light bg-faded" style="background-color: #e74c3c;">
-    <%= link_to 'Back to Post', @post, { class: "navbar-brand" } %> |
-    <%= link_to 'Posts Index', posts_path, { class: "navbar-brand" } %>
-  </nav>
-</div>
-
-<div class="row">
-  <div class="col-sm-2">
-  </div>
-
-  <div class="col-sm-8">
-    <h1>Editing Post</h1>
-    <%= render 'form', post: @post %>
-  </div>
+<div class="col-sm-8">
+  <h1>Editing Post</h1>
+  <%= render 'form', post: @post %>
+  <br>
+  <%= link_to 'Cancel', @post, {class: "btn btn-danger btn-sm"} %>
 </div>

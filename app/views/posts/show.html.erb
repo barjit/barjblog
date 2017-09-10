@@ -1,16 +1,4 @@
-<!-- Navigation Links -->
-<div class="container">
-  <nav class="navbar fixed-bottom navbar-light bg-faded" style="background-color: #e74c3c;">
-    <%= link_to 'Blog Index', posts_path, { class: "navbar-brand" } %> |
-    <%= link_to 'Edit Post', edit_post_path, { class: "navbar-brand"} %>
-  </nav>
-</div>
-
 <p id="notice"><%= notice %></p>
-
-<div class="row">
-  <div class="col-sm-2">
-  </div>
 
   <div class="col-sm-8">
     <p>
@@ -22,5 +10,7 @@
       <strong>Body:</strong>
       <%= @post.body %>
     </p>
+    <%= link_to 'Back', posts_path, {class: "btn btn-primary btn-sm"}%> |
+    <%= link_to 'Edit Post', edit_post_path, {class: "btn btn-warning btn-sm"} %>
   </div>
 </div>
