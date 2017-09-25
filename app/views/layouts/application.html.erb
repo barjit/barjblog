@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Barjblog</title>
-    <%= csrf_meta_tags %>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Barjblog</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
 
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-2" style="background-color: #ecf0f1;">
-          <nav class="nav flex-column">
-            <a class="btn btn-default" href="/">Home</a>
-            <a class="btn btn-default" href="/posts">Blog</a>
-            <a class="btn btn-default" href="welcome/resume">Resume</a>
-            <a class="btn btn-default" href="#" onclick="window.open('https://github.com/barjit')">Github</a>
-            <a class="btn btn-default" href="#"onclick="window.open('https://www.linkedin.com/in/barjit/')">Linkedin</a>
-          </nav>
-        </div>
-              <%= yield %>
-      </div>
-
-    </div>
-  </body>
+<body>
+  <header>
+    <%= render 'layouts/navigation' %>
+  </header>
+      <%= yield %>
+</body>
 
 </html>
+
+
+<!-- <div class="col-xs-2" style="background-color: #ecf0f1;">
+<nav class="nav flex-column">
+<a class="btn btn-default" href="/">Home</a>
+<a class="btn btn-default" href="/posts">Blog</a>
+<a class="btn btn-default" href="welcome/resume">Resume</a>
+<a class="btn btn-default" href="#" onclick="window.open('https://github.com/barjit')">Github</a>
+<a class="btn btn-default" href="#" onclick="window.open('https://www.linkedin.com/in/barjit/')">Linkedin</a>
+</nav>
+</div> -->
